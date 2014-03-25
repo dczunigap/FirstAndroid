@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical" tools:context=".Tab1">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Implementar uso de tabuladores por favor"
+            android:id="@+id/tv1" android:layout_weight="1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Dni:"
+            android:id="@+id/tvDni" android:layout_weight="1"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etDni" android:layout_weight="1" android:inputType="number"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Nombre y apellido:"
+            android:id="@+id/tvNomApe" android:layout_weight="1"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etNomApe" android:layout_weight="1" android:inputType="textCapWords|textPersonName"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Nombre del colegio:"
+            android:id="@+id/textView" android:layout_weight="1"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etColegio" android:layout_weight="1" android:inputType="textCapWords"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Número de mesa:"
+            android:id="@+id/tvMesa" android:layout_weight="1"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etMesa" android:layout_weight="1" android:inputType="number"/>
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="2.20" android:columnCount="3"
+            android:rowCount="4">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta"
+                android:id="@+id/btnAlta" android:layout_row="0" android:layout_column="0"
+            android:onClick="setListFooter" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consulta por Dni"
+                android:id="@+id/btnDni" android:layout_row="0" android:layout_column="1" android:onClick="consulta"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baja"
+                android:id="@+id/btnBaja" android:layout_row="1" android:layout_column="0" android:onClick="baja"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificación"
+                android:id="@+id/btnModi" android:layout_row="1" android:layout_column="1" android:onClick="cambio"/>
+    </GridLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Cerrar"
+            android:id="@+id/b1" android:onClick="cerrar" android:layout_weight="1"/>
+</LinearLayout>
