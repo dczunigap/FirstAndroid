@@ -8,6 +8,7 @@
     <bpmn:userTask id="UserTask_11fud4o" name="Approve Loan" camunda:formKey="embedded:app:forms/approve-loan.html" camunda:assignee="john">
       <bpmn:incoming>SequenceFlow_0c4zr6d</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1vbokmm</bpmn:outgoing>
+      
     </bpmn:userTask>
     <bpmn:endEvent id="EndEvent_1i5bz86" name="Loan Request Approved">
       <bpmn:incoming>SequenceFlow_18sw98m</bpmn:incoming>
